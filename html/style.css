@@ -1,0 +1,126 @@
+/* Body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background-color: #ffeced;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #fff, #ffeced);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #e67e8b;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #e67e8b 0%, #fff 100%);
+  z-index: -1;
+  opacity: 0.1;
+}
+
+/* Main */
+main {
+  padding: 50px;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+main h2 {
+  font-size: 28px;
+  margin-top: 50px;
+  color: #e67e8b;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+main h2:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #e67e8b;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+main p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #777;
+  position: relative;
+  z-index: 1;
+}
+
+footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #fff, #ffeced);
+  z-index: -1;
+  opacity: 0.1;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Font Awesome icons */
+.fa-heart {
+  color: #e67e8b;
+}
+
+/* Links */
+a {
+  color: #e67e8b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #d3

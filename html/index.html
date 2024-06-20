@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Aaima</title> <!-- Updated title here -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-4f4ZbNlGQlI2WvGmW6y2Fdjy+X9phAOGvFkW6Z8m6U5P6U5Bvr/1v/7pX9D9b0DOV2Zl8GvNcFZfAUd+v7NqFQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-heart"></i> Welcome Aaima <i class="fas fa-heart"></i></h1>
+            <p>Please enter your email to continue.</p>
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </header>
+        <main id="mainContent" style="display: none;">
+            <h2><i class="fas fa-heart"></i> To Aaima Pretty, <i class="fas fa-heart"></i></h2>
+            <p>I hope you're doing well. I've been thinking a lot about our friendship and how much it means to me. We've shared so many amazing memories and have always been there for each other through thick and thin.</p>
+            <p>Recently, it feels like things have been a bit off, and I believe it's because of HIM. I want you to know that our bond is incredibly important to me, and I don't want anything or anyone to come between us.</p>
+            <p>Let's not allow any third person or misunderstanding to damage the special connection we share. Our friendship is too valuable to let it be affected by external factors. I believe we can work through anything if we communicate openly and honestly with each other.</p>
+            <p>I'm here for you, and I hope we can resolve any issues and move forward stronger than ever.</p>
+            <p>I hope you can let this go.</p>
+            <h2><i class="fas fa-heart"></i> Why I'm sorry <i class="fas fa-heart"></i></h2>
+            <p>Also i dont want any behas now! just let it go and guve us a fresh start because laraio m kch nai rkhaa</p>
+            <h2><i class="fas fa-heart"></i> FUN BAAAT <i class="fas fa-heart"></i></h2>
+            <p>I missed you giving eidi this eid, qsmeiiiii</p>
+            <h2><i class="fas fa-heart"></i> ALSO <i class="fas fa-heart"></i></h2>
+            <p>Why don’t we put this behind us and move on? After all, life’s too short to hold grudges. ALSO, KUTTI MNY ITNI MUSHKIL SY BNAI HAI WEBSITE AB CHNDY NA KHALI!!!!!!!!</p>
+            <div id="friendshipQuestion" style="display: none;">
+                <hr>
+                <h2><i class="fas fa-heart"></i> Friendship Question <i class="fas fa-heart"></i></h2>
+                <p>Would you like to be friends again?</p>
+                <label>
+                    <input type="radio" name="friendship" value="yes" required> Yes
+                </label>
+                <label>
+                    <input type="radio" name="friendship" value="no"> No
+                </label>
+                <br><br>
+                <button type="button" id="submitFriendship">Submit</button>
+                <div id="response" style="display: none;">
+                    <p id="responseText"></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>REPLY WITH HANDSHAKE EMOJI, IT WILL MEAN ALOT</p>
+            <p>&copy; 2024 Malaika.com</p>
+        </footer>
+    </div>
+
+    <script>
+           <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Hide login form and display main content
+            document.getElementById('mainContent').style.display = 'block';
+
+            // Optionally, you can fetch additional user data or perform validation here
+
+            // You can scroll to the main content if desired
+            document.getElementById('mainContent').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('submitFriendship').addEventListener('click', function() {
+            // Get user's response to friendship question
+            var friendship = document.querySelector('input[name="friendship"]:checked');
+            if (friendship) {
+                // Display response based on user's choice
+                var responseElement = document.getElementById('responseText');
+                if (friendship.value === 'yes') {
+                    responseElement.textContent = 'Love you!';
+                } else {
+                    responseElement.textContent = 'No chance!';
+                }
+
+                // Show the response div
+                document.getElementById('response').style.display = 'block';
+            } else {
+                alert('Please select an option.');
+            }
+        });
+    </script>
+    </script>
+</body>
+</html>
